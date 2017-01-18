@@ -7,6 +7,8 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
 int main()
 {
@@ -79,16 +81,40 @@ int main()
   int f_int = 0;
 
   // In the real world of developing in C, we almost always use integer 1 for 
-  // true and integer 0 for false. And in fact, there's no formatter for boolean
-  // in printf. Instead, we use %d as we are dealing with an integer. See what 
-  // gets printed
+  // true and integer 0 for false rather than the bool type we use here. And in 
+  // fact, there's no formatter for boolean in printf. Instead, we use %d as we 
+  // are dealing with an integer. See what gets printed
+  /* TODO 4: uncomment this section
   printf("t: %d\nf: %d\n", t, f);
 
-  if (t) {
-    printf("t is evaluated as true inside if-condition, which should happen\n");
+  if (t) { 
+    printf("bool t is evaluated as true inside if-condition, which should happen\n");
   }
 
   if (f) {
-    printf("f is evaluated as true inside if-condition, which should NOT happen\n");
+    printf("bool f is evaluated as true inside if-condition, which should NOT happen\n");
   }
+
+  if (t_int) { 
+    printf("int t_int is evaluated as true inside if-condition, which should happen\n");
+  }
+
+  if (f_int) { 
+    printf("int f_int is evaluated as true inside if-condition, which should NOT happen\n");
+  }
+  End of TODO 4*/
+
+  // Great Job! You are donw with this stage of learning!
+  // Next: prog1.c for more logics and contrls!
+
+  return EXIT_SUCCESS; // Telling the system that we are done with no problem
 }
+
+
+
+
+
+
+
+
+
