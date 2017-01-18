@@ -45,6 +45,12 @@ int main()
    */
 
   /* Write your code for TODO 1 above this line  */
+
+  // Arrays
+  // Almost all the computert programs need to deal with a big chunk of data
+  // An array is a built-in data structure in almost all kinds of programming 
+  // languages, including C. It looks like this:
+  int[] arr = {8, 2, 3, 1, 2};
   
   // Let's try out more operations!
   double div = c / d;
