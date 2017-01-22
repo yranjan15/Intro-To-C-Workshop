@@ -71,26 +71,9 @@ int main()
   
   /* Write yout code for TODO 4 above this line */
 
-  /* Superb! You surely have completed a lot today!!
-   * However this is only a beginning of the mighty C Language; please don't 
-   * stop and always stay hungry for learning more on your own!
-   * Why not take a look at a challenging project: caesarCipher.c
+  /* To deal with the problem of repetition/code reusing, we have another tool
+   * besides loops, and that is functions!
+   * Continue to learn about functions in prog2.c
    */
   return EXIT_SUCCESS;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
