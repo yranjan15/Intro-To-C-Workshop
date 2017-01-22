@@ -43,21 +43,30 @@ int main()
    * double c and double d
    * Notice that the I/O formatting code for a double is %f
    */
+  double add_d = c + d;
+  double sub_d = c - d;
+  double mul_d = c * d;
 
+  printf("double c = %f\n", c);
+  printf("double d = %f\n", d);
+  printf("c + d = %f\n", add_d);
+  printf("c - d = %f\n", sub_d);
+  printf("c * d = %f\n", mul_d);
+  printf("We just played around with two double c = %f and d = %f\n", c, d); 
   /* Write your code for TODO 1 above this line  */
 
   // Let's try out more operations!
   double div = c / d;
   int div2 = a / b;
-  int div3 = a / d; // What's 1 divided by 2.0?
+  double div3 = a / d; // What's 1 divided by 2.0?
 
   /* TODO 2:
    * Uncomment the lines below (delete // in the front);
    * then try fill in the missing parts to make the desired value printed
    */
-  //printf("double div = %f\n",);
-  //printf("\n", div2);
-  //printf("int div3 = %d\n", div3)
+  printf("double div = %f\n", div);
+  printf("int div2 = %i\n", div2);
+  printf("int div3 = %f\n", div3);
 
   /* Edit your code for TODO 2 above this line */
 
@@ -69,7 +78,7 @@ int main()
    * Don't forget to uncomment the lines below
    */
 
-  // printf("Give me that point five! %?\n", );
+  printf("Give me that point five! %f\n", div3 );
   /* Write your code for TODO 3 above this line */
 
   // Let's talk about Logic
@@ -84,7 +93,6 @@ int main()
   // true and integer 0 for false rather than the bool type we use here. And in 
   // fact, there's no formatter for boolean in printf. Instead, we use %d as we 
   // are dealing with an integer. See what gets printed
-  /* TODO 4: uncomment this section
   printf("t: %d\nf: %d\n", t, f);
 
   if (t) { 
@@ -102,7 +110,6 @@ int main()
   if (f_int) { 
     printf("int f_int is evaluated as true inside if-condition, which should NOT happen\n");
   }
-  End of TODO 4*/
 
   // Great Job! You are donw with this stage of learning!
   // Next: prog1.c for more logics and contrls!
