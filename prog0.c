@@ -22,7 +22,7 @@ int main()
 
   // Notice how %d is related to the data actually got printed out
   // %d is an I/O formatting code designated to represent an integer
-  // \n is a speical character indicating a new line; try removing it and see 
+  // \n is a special character indicating a new line; try removing it and see 
   // what get printed
   printf("int a = %d\n", a);
   printf("int b = %d\n", b);
@@ -33,7 +33,7 @@ int main()
   // after the comma
   printf("We just played around with two integers: a = %d and b = %d\n", a, b);
 
-  // double percision floating point number
+  // double precision floating point number
   // a.k.a a number with decimal
   double c = 0.1;
   double d = 2.0;

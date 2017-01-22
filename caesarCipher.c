@@ -44,11 +44,11 @@ FILE *oFile;
 
 /* Forward Declarations of All Functions */
 int processArgs( int argc, char * const argv[], struct argInfo * argInfo );
-void usage(const char * progName);
-void encrypt(char c);
-void decrypt(char c);
+void usage( const char * progName );
+char encrypt( char c, int sftAmt );
+char decrypt( char c, int sftAmt );
 
-int main(int argc, char *argv[])
+int main( int argc, char *argv[] 
 {
   /* Initialize needed strcut */
   struct argInfo aI;
@@ -56,9 +56,38 @@ int main(int argc, char *argv[])
   // Process the command line arguments. Terminate if args are invalid
   if ( processArgs(argc, argv, &aI) != 0 )
   {
-    usage(argv[0]);
-    EXIT_FAILURE;
+    usage( argv[0] );
+    return EXIT_FAILURE;
   }
+  // Generate output file name according to the Mode
+  char oFilename[BUFSIZ];
+  strcpy( oFilename, aI.iFileName );
+  if ( aI.programMode == MODE_ENCRYPT )
+  {
+    strcat( oFilename, STR_ENCRYPTED_FILE_POSTFIX );
+  }
+  else
+  {
+    strcat( oFilename, _decrtyped );
+  }
+
+  // Open the input and output files
+  iFile = fopen( aI.iFileName, "r" ); // In read mode
+  oFile = fopen( oFilename, "w" );    // In write mode
+
+  //Check if the files were successfully opened
+  if ( iFile == NULL )
+  {
+    fprintf( stderr, STR_ERR_IFILE, aI.iFileName );
+  }
+  if ( oFile == NULL )
+  {
+    fprintf( stderr, STR_ERR_OFILE, oFileName );
+  }
+
+  // Close files
+  fclose( iFile );
+  fclose( oFile );
 
   return EXIT_SUCCESS;
 }
@@ -96,7 +125,7 @@ int processArgs( int argc, char * const argv[], struct argInfo * argInfo )
   char *endptr;
   // Convert the forth argument into a long integer
   long sftAmt = strtol(argv[3], &endptr, 10);
-  // Check the range of the given stfAmt
+  // Check the range of the given sftAmt
   if ( sftAmt < 0 || sftAmt > 25)
   {
     return -1;
@@ -110,7 +139,7 @@ int processArgs( int argc, char * const argv[], struct argInfo * argInfo )
 /*
  * Print out the usage of this program when bad command line arguments are passed in
  */
-void usage(const char * progName)
+void usage( const char * progName )
 {
-  fprintf(stderr, STR_USAGE, progName);
+  fprintf( stderr, STR_USAGE, progName );
 }

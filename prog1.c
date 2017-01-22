@@ -24,7 +24,7 @@ int main()
   printf("arr[0] = %d\n", arr[0]);
   /* TODO 1: Print the fifth (last element) of arr */
 
-  /* Write yout code for TODO 1 above this line */
+  /* Write your code for TODO 1 above this line */
 
   // For-Loop
   // Repetition is always essentially needed in programming
@@ -53,7 +53,7 @@ int main()
    * a new line
    */
 
-  /* Write yout code for TODO 3 above this line */
+  /* Write your code for TODO 3 above this line */
 
   // While-Loop
   // In many sense, while-loop is just like for loo, but indeed, they could be 
@@ -69,7 +69,7 @@ int main()
 
   /* TODO 4: Repeat TODO3, using a while loop */
   
-  /* Write yout code for TODO 4 above this line */
+  /* Write your code for TODO 4 above this line */
 
   /* To deal with the problem of repetition/code reusing, we have another tool
    * besides loops, and that is functions!

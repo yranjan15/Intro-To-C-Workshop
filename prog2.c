@@ -66,5 +66,4 @@ int addInt( int a, int b )
 /* Superb! You surely have completed a lot today!!
  * However this is only a beginning of the mighty C Language; please don't 
  * stop and always stay hungry for learning more on your own!
- * Why not take a look at a challenging project: caesarCipher.c
  */
